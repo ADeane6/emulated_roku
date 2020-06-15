@@ -1,3 +1,7 @@
+REPOSITORY MOVED TO GITHUB!
+
+https://github.com/mindigmarton/emulated_roku
+
 # emulated_roku
 
 This library is for emulating the Roku API. Discovery is tested with Logitech Harmony and Android remotes.
