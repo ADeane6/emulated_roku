@@ -99,11 +99,13 @@ MULTICAST_GROUP = "239.255.255.250"
 MULTICAST_PORT = 1900
 
 MULTICAST_RESPONSE = "HTTP/1.1 200 OK\r\n" \
-                     "Cache-Control: max-age = {ttl}\r\n" \
-                     "ST: roku:ecp\r\n" \
-                     "Location: http://{advertise_ip}:{advertise_port}/\r\n" \
-                     "USN: uuid:roku:ecp:{usn}\r\n" \
-                     "\r\n"
+                    "Cache-Control: max-age = {ttl}\r\n" \
+                    "SERVER: FreeRTOS/6.0.5, UPnP/1.0, IpBridge/1.16.0\r\n" \
+                    "hue-bridgeid: 001788FFFE23BFC2\r\n" \
+                    "ST: urn:schemas-upnp-org:device:basic:1\r\n" \
+                    "Location: http://{advertise_ip}:{advertise_port}/\r\n" \
+                    "USN: uuid:2f402f80-da50-11e1-9b23-001788255acc\r\n" \
+                    "\r\n"
 
 MULTICAST_NOTIFY = "NOTIFY * HTTP/1.1\r\n" \
                    "HOST: {multicast_ip}:{multicast_port}\r\n" \
@@ -111,7 +113,7 @@ MULTICAST_NOTIFY = "NOTIFY * HTTP/1.1\r\n" \
                    "NT: upnp:rootdevice\r\n" \
                    "NTS: ssdp:alive\r\n" \
                    "Location: http://{advertise_ip}:{advertise_port}/\r\n" \
-                   "USN: uuid:roku:ecp:{usn}\r\n" \
+                   "USN: uuid:2f402f80-da50-11e1-9b23-001788255acc\r\n" \
                    "\r\n"
 
 
